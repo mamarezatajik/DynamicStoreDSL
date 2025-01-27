@@ -1,0 +1,34 @@
+define {
+    entity: Inventory,
+    attributes {
+        id: String,
+        item_name: String,
+        quantity: Integer,
+        price_per_unit: Float,
+        supplier: String
+    }
+}
+
+create {
+    entity: Inventory,
+    attributes {
+        id: "I5001",
+        item_name: "Laptop",
+        quantity: 50,
+        price_per_unit: 1200.00,
+        supplier: "Tech Supplies Inc."
+    }
+}
+
+update {
+    entity: Inventory,
+    attributes {
+        id: "I5001",
+        quantity: 45
+    }
+}
+
+
+list {
+    entity: Inventory
+}

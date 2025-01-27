@@ -1,0 +1,14 @@
+define {
+    entity: Order,
+    attributes {
+        id: String,
+        customer_name: String,
+        total_amount: Float,
+        order_date: String,
+        status: String
+    }
+}
+
+list {
+    entity: Order
+}

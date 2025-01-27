@@ -1,0 +1,16 @@
+define {
+    entity: Customer,
+    attributes {
+        id: String,
+        full_name: String,
+        email: String,
+        phone_number: String
+    }
+}
+
+delete {
+    entity: Customer,
+    attributes {
+        id: "C2002"
+    }
+}

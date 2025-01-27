@@ -1,0 +1,32 @@
+define {
+    entity: Employee,
+    attributes {
+        id: String,
+        name: String,
+        role: String,
+        salary: Float,
+        department: String
+    }
+}
+
+create {
+    entity: Employee,
+    attributes {
+        id: "E1001",
+        name: "Sara Lee",
+        role: "Manager",
+        salary: 65000.0,
+        department: "Sales"
+    }
+}
+
+delete {
+    entity: Employee,
+    attributes {
+        id: "E1001"
+    }
+}
+
+list {
+    entity: Employee
+}

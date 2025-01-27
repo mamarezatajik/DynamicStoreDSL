@@ -1,0 +1,21 @@
+define {
+    entity: Customer,
+    attributes {
+        id: String,
+        full_name: String,
+        email: String,
+        phone_number: String,
+        address: String
+    }
+}
+
+create {
+    entity: Customer,
+    attributes {
+        id: "C7003",
+        full_name: "Bob Johnson",
+        email: "bob.johnson@example.com",
+        phone_number: "987-654-3210",
+        address: "123 Maple Street, Springfield"
+    }
+}

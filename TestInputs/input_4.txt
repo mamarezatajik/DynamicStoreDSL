@@ -1,0 +1,30 @@
+define {
+    entity: Order,
+    attributes {
+        id: String,
+        customer_name: String,
+        total_amount: Float,
+        status: String,
+        delivery_date: String
+    }
+}
+
+create {
+    entity: Order,
+    attributes {
+        id: "O8002",
+        customer_name: "Emily Brown",
+        total_amount: 299.99,
+        status: "Pending",
+        delivery_date: "2025-02-05"
+    }
+}
+
+
+update {
+    entity: Order,
+    attributes {
+        id: "O8002",
+        status: "Completed"
+    }
+}

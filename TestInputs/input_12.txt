@@ -1,0 +1,9 @@
+define {
+    entity: Product,
+    attributes {
+        id: String,
+        name: String,
+        price: Float,
+        stock_quantity: Integer
+    }
+}

@@ -1,0 +1,34 @@
+define {
+    entity: Product,
+    attributes {
+        id: String,
+        name: String,
+        price: Float,
+        category: String,
+        stock: Integer
+    }
+}
+
+create {
+    entity: Product,
+    attributes {
+        id: "P3001",
+        name: "Smartphone",
+        price: 799.99,
+        category: "Electronics",
+        stock: 100
+    }
+}
+
+update {
+    entity: Product,
+    attributes {
+        id: "P3001",
+        price: 749.99,
+        stock: 90
+    }
+}
+
+list {
+    entity: Product
+}

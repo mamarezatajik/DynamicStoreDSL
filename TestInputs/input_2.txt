@@ -1,0 +1,62 @@
+define {
+    entity: Order,
+    attributes {
+        id: String,
+        customer_name: String,
+        total_amount: Float,
+        order_date: String,
+        status: String
+    }
+}
+
+define {
+    entity: Customer,
+    attributes {
+        id: String,
+        full_name: String,
+        email: String,
+        phone_number: String
+    }
+}
+
+create {
+    entity: Order,
+    attributes {
+        id: "O1001",
+        customer_name: "John Doe",
+        price: 250.0,
+        order_date: "2025-01-25",
+        status: "Pending"
+    }
+}
+
+create {
+    entity: Customer,
+    attributes {
+        id: "C1001",
+        full_name: "John Doe",
+        email: "john.doe@example.com",
+        phone_number: "123-456-7890"
+    }
+}
+
+update {
+    entity: Order,
+    attributes {
+        id: "O1001",
+        status: "Shipped",
+        order_date: "kir"
+    }
+}
+
+delete {
+    entity: Customer,
+    attributes {
+        id: "C1001"
+    }
+}
+
+
+list {
+    entity: Order
+}

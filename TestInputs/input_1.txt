@@ -1,0 +1,128 @@
+define {
+    entity: Product,
+    attributes {
+        id: String,
+        name: String,
+        category: String,
+        price: Float,
+        stock_quantity: Integer,
+        supplier: String
+    }
+}
+
+define {
+    entity: Order,
+    attributes {
+        id: String,
+        customer_name: String,
+        total_amount: Float,
+        order_date: String,
+        status: String,
+        payment_method: String
+    }
+}
+
+define {
+    entity: Customer,
+    attributes {
+        id: String,
+        full_name: String,
+        email: String,
+        phone_number: String,
+        loyalty_points: Integer,
+        membership: String
+    }
+}
+
+create {
+    entity: Product,
+    attributes {
+        id: "P4001",
+        name: "Wireless Mouse",
+        category: "Electronics",
+        price: 25.99,
+        stock_quantity: 100,
+        supplier: "TechWorld Inc."
+    }
+}
+
+create {
+    entity: Customer,
+    attributes {
+        id: "C4001",
+        full_name: "Michael Brown",
+        email: "michael.brown@example.com",
+        phone_number: "321-654-0987",
+        loyalty_points: 150,
+        membership: "Gold"
+    }
+}
+
+create {
+    entity: Order,
+    attributes {
+        id: "O4001",
+        customer_name: "Michael Brown",
+        total_amount: 51.98,
+        order_date: "2025-02-02",
+        status: "Pending",
+        payment_method: "Credit Card"
+    }
+}
+
+update {
+    entity: Product,
+    attributes {
+        id: "P4001",
+        stock_quantity: 98
+    }
+}
+
+update {
+    entity: Customer,
+    attributes {
+        id: "C4001",
+        loyalty_points: 175
+    }
+}
+
+
+delete {
+    entity: Product,
+    attributes {
+        id: "P4001"
+    }
+}
+
+create {
+    entity: Product,
+    attributes {
+        id: "P4002",
+        name: "Gaming Keyboard",
+        category: "Electronics",
+        price: 49.99,
+        stock_quantity: 50,
+        supplier: "GamingHub LLC"
+    }
+}
+
+update {
+    entity: Order,
+    attributes {
+        id: "O4001",
+        status: "Completed",
+        total_amount: 46.78
+    }
+}
+
+list {
+    entity: Order
+}
+
+list {
+    entity: Customer
+}
+
+list {
+    entity: Product
+}

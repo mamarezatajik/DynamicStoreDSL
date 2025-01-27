@@ -1,0 +1,30 @@
+define {
+    entity: Product,
+    attributes {
+        id: String,
+        name: String,
+        price: Float,
+        stock_quantity: Integer,
+        description: String
+    }
+}
+
+create {
+    entity: Product,
+    attributes {
+        id: "P5001",
+        name: "Laptop",
+        price: 1299.99,
+        stock_quantity: 50,
+        description: "High-performance laptop with 16GB RAM and 512GB SSD"
+    }
+}
+
+update {
+    entity: Product,
+    attributes {
+        id: "P5001",
+        stock_quantity: 45,
+        price: 1249.99
+    }
+}

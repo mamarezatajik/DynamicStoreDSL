@@ -1,0 +1,19 @@
+define {
+    entity: Supplier,
+    attributes {
+        id: String,
+        company_name: String,
+        contact_email: String,
+        phone_number: String
+    }
+}
+
+create {
+    entity: Supplier,
+    attributes {
+        id: "S4004",
+        company_name: "Fresh Supplies Inc.",
+        contact_email: "contact@freshsupplies.com",
+        phone_number: "123-987-6543"
+    }
+}

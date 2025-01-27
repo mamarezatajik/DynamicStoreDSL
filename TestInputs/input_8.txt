@@ -1,0 +1,28 @@
+define {
+    entity: Order,
+    attributes {
+        id: String,
+        customer_name: String,
+        total_amount: Float,
+        order_date: String,
+        status: String
+    }
+}
+
+create {
+    entity: Order,
+    attributes {
+        id: "O6002",
+        customer_name: "Alice Smith",
+        total_amount: 200.50,
+        order_date: "2025-01-27",
+        status: "Pending"
+    }
+}
+
+delete {
+    entity: Order,
+    attributes {
+        id: "O6002"
+    }
+}
